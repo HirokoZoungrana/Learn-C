@@ -1,22 +1,38 @@
 #include<stdio.h>
-int main(void){
-  //1
-  //アドレスを参照する変換指定文字列
+#include<stdlib.h>
+
+int main(int argc, char **argv){
   /*
-  int a = 5;
-  double x = 12.3;
-  //%p　変数のポインタを返す
-  printf("&a:%p, a:%d\n", &a, a);
-  printf("&x:%p, x:%f\n", &x, x);
+    コマンドラインから入力されたnum個の値
+    標準入力から与えられた整数値の逆数値を表示する
   */
+  int num, *pum, i;
+  int re[] = {0};
 
-  //2
-  int a = 5;
-  int *p;
+  num = atoi(argv[1]);
+  pum = calloc(num, sizeof(int));
+  if(pum == NULL){
+    puts("cannot allocate memory.");
+    exit(1);
+  }
+  for(i=0; i<num; i++){
+    scanf("%d", &pum);
+  }
+  for(i=0; i<num; i++){
+    re[i] = pum[num - 1 - i];
+  }
+  for(i=0; i<num; i++){
+    printf("%d\n", re[i]);
+  }
 
-  p = &a;
-  printf("a:%d\n", *p);
+  /*
+    コマンドラインで与えられる整数の総和
+  */
+  /*
+  pum = calloc(argc, sizeof(int));
+  if(pum == NULL){
 
-  *p = 10;
-  printf("a:%d\n", *p);
+  }
+  */
+  return 0;
 }
