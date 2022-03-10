@@ -1,0 +1,13 @@
+#include<stdio.h>
+
+int main(void){
+  int sum = 0;
+  int num, i;
+  
+  for(i=0; i<10; i++){
+    scanf("%d", &num);
+    sum += num;
+  }
+  printf("avelage: %d\n", sum/10);  
+  return 0;
+}
