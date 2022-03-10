@@ -1,0 +1,15 @@
+#include<stdio.h>
+
+int main(void){
+  int multi=1;
+  int num, i;
+  
+  scanf("%d", &num;)
+  for(i=1; i<=num; i++){
+    multi *= i;
+  }
+  
+  printf("%dの階乗:%d\n.", num, multi);
+  
+  return 0;
+}
