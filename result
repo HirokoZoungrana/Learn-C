@@ -1,0 +1,16 @@
+#include<stdio.h>
+
+int main(void){
+  int wins = 0;
+  int result;
+  int i;
+
+  for(i=0; i<10; i++){
+    scanf("%d", &result);
+
+    if(result == 1) wins++;
+  }
+
+  printf("win %d, lose %d\n", wins, 10-wins);
+  return 0;
+}
