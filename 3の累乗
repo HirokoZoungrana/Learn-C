@@ -1,0 +1,14 @@
+#include<stdio.h>
+
+int main(void){
+  int i, count = 1;
+
+  for(i=3; i<1000; i++){
+      if(i % 3 == 0){
+        printf("%4d", i);
+        if(count % 10 == 0) printf("\n");
+        count++;
+    }
+  }
+  return 0;
+}
