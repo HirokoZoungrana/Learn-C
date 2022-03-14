@@ -1,0 +1,14 @@
+#include<stdio.h>
+
+int main(void){
+  int count, n = 0;
+
+  scanf("%d", &count);
+
+  while(count > 0){
+    printf("%d", n++);
+    if(n > 9) n = 0;
+    count--;
+  }
+  return 0;
+}
