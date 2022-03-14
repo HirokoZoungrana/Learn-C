@@ -1,0 +1,14 @@
+#include<stdio.h>
+
+int main(void){
+  int count;
+  int i;
+
+  scanf("%d", &count);
+
+  while(count > 0){
+    printf("*");
+    count--;
+  }
+  return 0;
+}
