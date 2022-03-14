@@ -1,0 +1,11 @@
+#include<stdio.h>
+
+int main(void){
+  int pow = 3;
+
+  while(pow < 1000){
+    printf("%d ", pow);
+    pow *= 3;
+  }
+  return 0;
+}
