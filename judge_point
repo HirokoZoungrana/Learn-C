@@ -1,0 +1,18 @@
+#include<stdio.h>
+
+int main(void){
+  int strike, ball;
+  int num;
+
+  printf("You get a strike then push 1. Or if get a ball then push 2.\n");
+
+  strike = ball = 0;
+  while(strike < 3 && ball < 4){
+    scanf("%d", &num);
+    if(num == 1) strike++;
+    else if(num == 2) ball++;
+  }
+  printf("strike point:%d\n", strike);
+  printf("ball point:%d\n", ball);
+  return 0;
+}
